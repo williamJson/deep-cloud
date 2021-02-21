@@ -39,8 +39,7 @@ public class IdWorker {
      */
     public static String dateTimeId() {
         // TODO: 2021/2/21
-        // throw new RuntimeException("not support yet");
-        return sequence.dateId();
+        throw new RuntimeException("not support yet");
     }
 
     /**
@@ -54,9 +53,7 @@ public class IdWorker {
 
     public static void main(String[] args) {
         for (int i = 0; i < 100; i++) {
-//            System.out.println(dateTimeId());
             try {
-
                 System.out.println(nextId());
                 Thread.sleep(800L);
             } catch (InterruptedException e) {
